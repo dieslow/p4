@@ -1,0 +1,80 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    </head>
+    <body>
+        <div>
+            <h1>Entri Mahasiswa</h1>
+            <form action="FormMahasiswaServlet" method="post" name="form">
+                <table >
+                    <tr>
+                        <td>
+                            <label>NPM</label>
+                        </td>
+                        <td>
+                            <input type="text" id="npm" name="npm">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Nama</label>
+                        </td>
+                        <td>
+                            <input type="text" name="nama">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Tempat Lahir</label>
+                        </td>
+                        <td>
+                            <input type="text" name="tmpt">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Tanggal Lahir</label>
+                        </td>
+                        <td>
+                            <input type="text" id="tgl" name="tgl">
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Jenis Kelamin</label>
+                            <label>&nbsp;</label>
+                        </td>
+
+                        <td>
+                            <input type="radio" name="jk" id="pria" value="pria" onclick="doRadio()"/> <label for="pria">Pria</label>
+                            <input type="radio" name="jk" id="wanita" value="wanita" onclick="doRadio()"/> <label for="wanita">Wanita</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Alamat</label>
+                        </td>
+                        <td>
+                            <textarea rows="4" cols="20" name="alamat"></textarea> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="submit" id="btnSave" value="Simpan" class="btn"/>
+                            <input type="reset" value="Reset" class="btn" />
+                        </td>
+                    </tr>					
+                </table>
+            </form>
+        </div>
+    </body>
+</html>
